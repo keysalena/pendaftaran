@@ -27,19 +27,15 @@
         </div>
 
         <div class="form-step">
-            <!-- Isi langkah pertama formulir di sini -->
         </div>
 
         <div class="form-step">
-            <!-- Isi langkah kedua formulir di sini -->
         </div>
 
         <div class="form-step">
-            <!-- Isi langkah ketiga formulir di sini -->
         </div>
 
         <div class="form-step">
-            <!-- Isi langkah keempat formulir di sini -->
         </div>
         <style>
             .form-step-active .input-group {

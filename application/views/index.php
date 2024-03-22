@@ -311,7 +311,6 @@
 
             formSteps[formStepsNum].classList.add("form-step-active");
 
-            // Hide the 'Selesai' form-step if it's not the last step
             if (formStepsNum < formSteps.length - 1) {
                 document.querySelector(".form-step-finish").style.display = "none";
             } else {
