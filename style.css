@@ -15,7 +15,21 @@ body {
     place-items: center;
     min-height: 100vh;
 }
+.input-error {
+    border-color: red !important;
+}
 
+.text-danger {
+    color: red;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.ml-2 {
+    margin-left: 2px;
+}
 /* Global Stylings */
 label {
     display: block;

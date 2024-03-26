@@ -14,6 +14,15 @@ class Sekolah extends CI_Controller
 
     public function tambah()
     {
+        $this->form_validation->set_rules('nisn', 'NISN', 'required');
+        $this->form_validation->set_rules('nama_siswa', 'Nama Siswa', 'required');
+        $this->form_validation->set_rules('tempat_lahir', 'Tempat Tanggal Lahir', 'required');
+        $this->form_validation->set_rules('tanggal_lahir', 'Tanggal Lahir', 'required');
+        $this->form_validation->set_rules('agama', 'Agama', 'required');
+        $this->form_validation->set_rules('jenis_kelamin', 'Jenis Kelamin', 'required');
+        $this->form_validation->set_rules('asal_sekolah', 'Asal Sekolah', 'required');
+        $this->form_validation->set_rules('no_hp_siswa', 'No Handphone', 'required');
+
         $this->load->model('Model_sekolah');
 
         $nisn = $this->input->post('nisn');
@@ -24,24 +33,24 @@ class Sekolah extends CI_Controller
         $jenis_kelamin = $this->input->post('jenis_kelamin');
         $asal_sekolah = $this->input->post('asal_sekolah');
         $no_hp_siswa = $this->input->post('no_hp_siswa');
-        
+
         $nama_ayah = $this->input->post('nama_ayah');
         $alamat_ayah = $this->input->post('alamat_ayah');
         $no_hp_ayah = $this->input->post('no_hp_ayah');
         $pekerjaanayah = $this->input->post('pekerjaanayah');
         $pekerjaanayah_lainnya = $this->input->post('pekerjaanayah_lainnya');
-        
+
         $nama_ibu = $this->input->post('nama_ibu');
         $alamat_ibu = $this->input->post('alamat_ibu');
         $no_hp_ibu = $this->input->post('no_hp_ibu');
         $pekerjaanibu = $this->input->post('pekerjaanibu');
         $pekerjaanibu_lainnya = $this->input->post('pekerjaanibu_lainnya');
-        
+
         $jurusan1 = $this->input->post('jurusan1');
         $jurusan2 = $this->input->post('jurusan2');
         $jurusan3 = $this->input->post('jurusan3');
-        
-        
+
+
         $siswa = array(
             'nisn' => $nisn,
             'nama_siswa' => $nama_siswa,
